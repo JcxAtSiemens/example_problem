@@ -44,9 +44,13 @@ _That's the big question!_
 ### Determination of the Offset Boundary
 The constant part in the problem definition (that would be e.g. 36, for the case of c=6 or 144, for the case of c=12) is the energy which can not be decreased with the manipulation of the variables.
 Hence, it stays in the problem. This energy is communicated with the quantum annealer 
+
 >e_offset=boundary.as_independent(x,y,z,q)[0]*langrange_hard
 
 ### Reformulation of the Answer from the Annealer Back to the Integer
+Since the Annealer returns back a vector of binary variables, one must translate it back to a readable answer. To do that, we just to binary to decimal conversation. _smpl[0]_ is equivalent to our symbol x,
+ and _smpl[1]_ to our y etc.
+ 
 >answer = 8*smpl[0] + 4*smpl[1] + 2*smpl[2] + smpl[3]
 
 ### helpers.py
