@@ -27,6 +27,7 @@ After the problem is created, coefficients of the variables are placed in the co
 since $0^2=0$ and $1^2=1$. The coefficients of the singular variables are placed in the diagonal of the cost matrix, while the coefficients of the multiplicative variables are placed in the 
 off-diagonal elements.
 
+
 $$
 Q_{m,n} = 
  \begin{pmatrix}
