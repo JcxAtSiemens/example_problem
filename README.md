@@ -30,12 +30,12 @@ off-diagonal elements.
 ~~include matrix here~~
 
 $$
-A_{m,n} = 
+Q_{m,n} = 
  \begin{pmatrix}
-  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
-  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+  q_{x,x} & q_{x,y} & q_{x,z} & q_{x,q} \\
+  q_{y,x} & q_{y,y} & q_{y,z} & q_{y,q} \\
+  q_{z,x} & q_{z,y}  & q_{z,z} & q_{z,q}  \\
+  q_{q,x} & q_{q,y} & q_{q,z} & q_{q,q} 
  \end{pmatrix}
 $$
 
