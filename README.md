@@ -16,14 +16,14 @@ The problem variable is expressed in binary manner to make it easier to express 
 In the code, this is expressed as
 > expression_1 = (8x+4y+2z+q)
 
-coefficients being the powers of 2. _expression_1_ is here just our variable -x- given in the minimization problem. The x in the expression itself is just a simpy symbol,
+coefficients being the powers of 2. _expression_1_ is here just our variable **x** given in the minimization problem. The _x_ in the expression itself is just a simpy symbol,
   and should not be confused with the one in the optimization problem.
 
 Boundary condition is expressed in the same manner with a constant factor between 0 and 15 (4 bit's allowance span).
 
 ### Creation of the Cost Matrix
 
-After the problem is created, coefficients of the variables are placed in the cost matrix. We don't differentiate between quadratic expressions and singular experrions(such as $x^2$ and $x$),
+After the problem is created, coefficients of the variables are placed in the symmetrical cost matrix. We don't differentiate between quadratic expressions and singular experrions(such as $x^2$ and $x$),
 since $0^2=0$ and $1^2=1$. The coefficients of the singular variables are placed in the diagonal of the cost matrix, while the coefficients of the multiplicative variables are placed in the 
 off-diagonal elements.
 
@@ -48,8 +48,8 @@ Hence, it stays in the problem. This energy is communicated with the quantum ann
 >e_offset=boundary.as_independent(x,y,z,q)[0]*langrange_hard
 
 ### Reformulation of the Answer from the Annealer Back to the Integer
-Since the Annealer returns back a vector of binary variables, one must translate it back to a readable answer. To do that, we just to binary to decimal conversation. _smpl[0]_ is equivalent to our symbol x,
- and _smpl[1]_ to our y etc.
+Since the Annealer returns back a vector of binary variables, one must translate it back to a readable answer. To do that, we just to binary to decimal conversation. _smpl[0]_ is equivalent to our symbol _x_,
+ and _smpl[1]_ to our _y_ etc.
  
 >answer = 8*smpl[0] + 4*smpl[1] + 2*smpl[2] + smpl[3]
 
