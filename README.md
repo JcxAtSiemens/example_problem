@@ -6,7 +6,7 @@ This script demonstrates how to formulate the optimisation problem
 
 $$ min \text{ } x^2 $$
 
-$$ s.t. \text{ } x^2-c \text{   for a constant c} $$
+$$ s.t. \text{ } x^2-c \quad \text{for a constant c} $$
 
 up to a positive integer constant of 15.
 
