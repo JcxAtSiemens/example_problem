@@ -2,7 +2,7 @@
 
 ## A Basic Mathematical Optimisation Problem With A Basic Boundary Condition To Demonstrate QUBO Formulation
 
-This script demonstrates how to formulate the optimisation problem
+This script demonstrates how to formulate the optimisation problem 
 
 $$ min \text{ } x^2 $$
 
