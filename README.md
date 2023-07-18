@@ -12,7 +12,7 @@ up to a positive integer constant of 15.
 
 ### Formulation of Minimization Problem and the Boundary Condition
 
-The problem variable is expressed in binary manner to make it easier to express in the forms of 1's and 0's - Those are the only allowed values in the QUBO formulation.
+The problem variable is expressed in binary manner to make it easier to express in the forms of 1's and 0's - those are the only allowed values in the QUBO formulation anyway.
 In the code, this is expressed as
 > expression_1 = (8x+4y+2z+q)
 
