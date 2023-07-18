@@ -41,7 +41,7 @@ $$
 ### Choice of Lambda
 _That's the big question!_
 
-### Determination of the Offset Boundary
+### Determination of the Offset Energy
 The constant part in the problem definition (that would be e.g. 36, for the case of c=6 or 144, for the case of c=12) is the energy which can not be decreased with the manipulation of the variables.
 Hence, it stays in the problem. This energy is communicated with the quantum annealer via
 
